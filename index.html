@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-green-200 flex justify-between items-center w-full h-20">
+      <div class="logo m-5 text-5xl">SalesCal.com</div>
+      <div class="flex">
+          <div class="total m-5 text-5xl capitalize">Sales Taxes $</div>
+        <div class="salesprice ml-0 m-5 text-5xl">0</div>
+        <div class="total m-5 text-5xl capitalize">Total $</div>
+        <div class="totalprice ml-0 m-5 text-5xl">0</div>
+      </div>
+    </nav>
+    <!-- INPUT FORM -->
+    <form class="flex justify-center items-center w-full h-32 bg-green-300">
+        <input
+        type="text"
+        id="focus"
+        class="number w-20 h-20 text-3xl p-4 m-1 focus:placeholder-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        placeholder="No."
+        required
+      />
+      <input
+        type="text"
+        class="imported w-64 h-20 text-3xl p-4 m-1 focus:placeholder-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        placeholder="imported"
+      />
+        <input
+        type="text"
+        class="itemdesc w-64 h-20 text-3xl p-4 m-1 focus:placeholder-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        placeholder="item Description"
+        required
+      />
+       <div class="select text-3xl m-4">
+            <select name="type" class="filterType focus:placeholder-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                <option value="None">None</option>
+                <option value="Book">Book</option>
+                <option value="Food">Food</option>
+                <option value="Medics">Medics</option>
+            </select>
+        </div>
+      <div class="text-3xl m-4">at</div>
+      <input
+        type="text"
+        class="price w-64 h-20 text-3xl p-4 m-1 focus:placeholder-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        placeholder="price"
+        required
+      />
+      <button
+        class="button w-20 h-20 text-5xl bg-green-100 p-4 pt-0 m-1"
+        type="submit"
+      >
+        +
+      </button>
+    </form>
+    <!-- OUTPUT -->
+    <div class="bg-green-400 w-full min-h-screen">
+      <div class="purchaseTable flex flex-col items-center pb-5"></div>
+    </div>
+
+    <script type = "text/javascript" src ="script.js"></script>
+</body>
+</html>
